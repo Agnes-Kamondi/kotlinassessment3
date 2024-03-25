@@ -28,6 +28,8 @@ fun number(num1:Array<Int>):Int{
     println(length)
     println(real)
     return add
+    return length
+    return real
 
 
 
@@ -41,7 +43,7 @@ fun volume(radius:Int):Double{
     return volumeOfSphere
 
 }
-fun isPalindrome (word: String){
+fun isPalindrome (word: String):Boolean{
     var replace = word.reversed()
     if (word == replace){
         println("true")
@@ -49,4 +51,6 @@ fun isPalindrome (word: String){
     else {
         println("false")
     }
+    var replaced = word == replace
+    return replaced
 }
